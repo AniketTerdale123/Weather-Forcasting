@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WetherApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contaner" >
+        
+        <div class="wether-app">
+            <h2 >Wether-App</h2>
+            <div class ="wetherInfo">
+                <div>
+                    
+                    <input type="text" id ="cityname" required placeholder="city name">
+                    <button type="button" onclick="fetchData()" id="btn">SEARCH</button>
+                </div>
+                <br>
+                <div id ="temp1">
+                    <span id="temp"></span></span>&#x02103</span><br>
+                </div> 
+                <span id="city1"><span id="city"></span>&#x26C5</span> 
+                <div>
+
+                    <!-- <span><b>City:</b><span id="city"></span></span><br> -->
+                    <!-- <span><b>Description:</b><span id="desc"></span></span><br>
+                    <span><b>Wind Speed:</b><span id="windspeed"></span>m/hr</span><br>
+                    <span><b>Tempreture:</b><span id="temp"></span>&#x02103</span><br>
+                    <span><b>humidity:</b><span id="hum"></span>deg/cel</span><br> -->
+
+                    <table cellspacing="60px" >
+                        <tr>
+                            <td><span><b>Description:</b><span id="desc"></span></span></td>
+                            <td><span><b>Wind Speed:</b><span id="windspeed"></span>m/hr</span><br></td>
+
+                        </tr>
+                        <tr>
+                            <td><span><b>Tempreture:</b><span id="tempmax"></span>&#x02103 /<span id="tempmin"></span>&#x02103</span><br></td>
+                            <td> <span><b>humidity:</b><span id="hum"></span>deg/cel</span><br></td>
+                            
+                        </tr>
+                    </table>
+    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
